@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вычисление тригонометрических функций</title>
+</head>
+<body>
+
+<h1>Вычисление тригонометрических функций</h1>
+
+<form method="post">
+    <label>Выберите функцию</label>
+    <select name="function">
+        <option value="sinx">sinx</option>
+        <option value="cosx">cosx</option>
+        <option value="tgx">tgx</option>
+        <option value="ctgx">ctgx</option>
+    </select>
+    <br/>
+
+    <label>X = </label>
+    <input type="text" name="x">
+    <br/>
+
+    <label>Измерение</label>
+    <select name="measure">
+        <option value="Градусы">Градусы</option>
+        <option value="Радианы">Радианы</option>
+    </select>
+    <br/>
+
+    <label>Введите точность</label>
+    <input type="text" name="precision">
+    <br/>
+
+    <button type="submit">Рассчитать</button>
+</form>
+
+<output><h2>Результат: {{ value }}</h2></output>
+
+</body>
+</html>
